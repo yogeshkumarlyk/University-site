@@ -1,0 +1,442 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* header{
+  background-image: url("https://www.srmist.edu.in/sites/default/files/styles/banner/public/banner/about_srm2_8.jpg?itok=Ag-V8suW");
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+  background-blend-mode: lighten;
+
+}  */
+.header2{
+  overflow: hidden;
+  position: relative;
+}
+.demo-bg{
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  bottom: 0 ;
+  width: 100%;
+  height: auto;
+}
+.logo{
+  position: relative;
+}
+.header2{
+  display: flex;
+}
+
+/* .search-box{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  padding: 6px;
+
+  margin-bottom: 8px;
+  margin-right: 106px;
+  
+}
+.search{
+  border: none;
+  border-bottom: 1px solid black;
+  width: 200px;
+  background: transparent;
+  transition: .5s;
+  font-size: 17px;
+}
+.search-box img{
+  width: 20px;
+  height: 20px;
+} */
+.univ-locations{
+  position: absolute;
+  top: 0%;
+  right: 40px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(32,7,105);
+  font-weight: bold;
+}
+.contact-us{
+  position: absolute;
+  bottom: 0%;
+  right: 30px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(32,7,105);
+  font-weight: bold;
+  
+}
+.apply-now{
+  background-color: rgb(248, 186, 128);
+  color: rgb(32,7,105);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+}
+.apply-now:hover{
+  text-decoration: none;
+  color: rgb(255, 94, 0);
+}
+marquee{
+  color: rgb(32,7,105);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==----------------------------------------------header-------------------------- */
+.logo{
+  display: flex;
+  /* background-color: aliceblue; */
+}
+.logo_img{
+  padding: 10px;
+  height: 90px;
+  width: 90px;
+}
+.nav-2{
+  padding-top: 0.2rem;
+  height: 60px;
+
+}
+.edu{
+  margin-top: 10px;
+  font-size: 50px;
+  color: rgb(32,7,105);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.univ{
+  font-size: 20px;
+  color: rgb(243,181,46);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media only screen and (max-width: 700px) {
+  .header2{
+    display: block;
+  }
+  .univ-locations{
+    position: relative;
+    right: 0;
+    left: 40px;
+    font-size: 12px;
+  }
+  .contact-us{
+    position: relative;
+    left: 150px;
+    
+  }
+  .edu{
+    font-size: 40px;
+  }
+  /* .search{
+    width: 100px;
+  } */
+}
+/* ====================================================navbar============================================================== */
+body {
+  font-family: Arial, sans-serif;
+}
+nav {
+  margin-left: 200px;
+    background: #ffff;
+    color: rgb(32,7,105);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 5px 30px 0px 20px;
+  
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(32,7,105);
+    font-size: 20px;
+    transition: 0.2s ease;
+    font-weight:bold;
+  }
+  nav .mainMenu li a:hover {
+    color: rgb(255, 94, 0);
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 10px;
+    /* margin-left: 50px; */
+    align-items: center;
+    display: none;
+    cursor: pointer;
+  }
+  /* nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: rgb(255, 123, 0);
+  } */
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media (max-width: 900px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background:#ffff;
+      transition: top 1s ease 0s;
+      display: none;    
+    }
+    /* nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 120px;
+    } */
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    /* .icons i {
+      display: inline-block;
+      padding: 12px;
+    } */
+  }
+  .direction_links{
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  .submit-applynow{
+    padding-left: 5px;
+    background-color: rgb(32,7,105);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /* ----------------------------------------------------------------------carousel------------------------------------------------- */
+  .carousel-inner img {
+    width: 100%;
+    height: 600px;
+}
+
+  /*-----------------------------------------------university events------------------------------------------------------------------------------------*/
+
+.title{
+  color: rgb(32,7,105);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 50px;
+}
+.subtitle{
+  color: rgb(255, 123, 0);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+      /*-----------------------------------------------news----------------------------------------------------------*/
+.content{
+  margin-top: 10px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+ }
+ 
+ .content::-webkit-scrollbar{
+  display: none;
+}
+
+.show-data2{
+  width: 100%;
+    object-fit: contain;
+    max-height: 350px;
+    margin-right: 0px;
+    transition: transform 450ms;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    border: 0.01px solid rgb(201, 197, 197);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 2px 5px rgb(206, 203, 203);
+    
+
+}
+.show-data2:hover{
+  transform: scale(1.04);
+}
+.pic{
+  height: 250px;
+  width: 250px;
+  padding: 10px 0 0 30px;
+}
+.name{
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.more{
+  float: right;
+  margin-right: 15px;
+}
+.desc{
+  text-align: center;
+}
+@media only screen and (max-width: 450px) {
+  .show-data2{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+  }
+  .pic{
+    height: 140px;
+    width: 140px;
+  }
+}
+/* ------------------------------------------------------Academics------------------------------------------------------- */
+
+.blog{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.brouchere{
+  flex: 1;
+  padding: 100px;
+}
+.brouchere-title{
+  font-size: 2rem;
+  color: rgb(32,7,105);
+  padding: 20px;
+}
+.brouchere-content{
+  font-size: 1rem;
+  border: 0.2px solid rgb(32,7,105);
+  border-radius: 10px;
+  padding: 20px;
+
+}
+.brouchere a{
+  float: right;
+  margin: 20px;
+}
+.blog-poster{
+  flex: 1;
+}
+.blog-pic{
+  width: 600px;
+  padding:30px ;
+  /* border: 1px solid black; */
+}
+@media only screen and (max-width: 700px) {
+  .blog-pic{
+    width: 400px;
+    padding: 10px ;
+  }
+  .brouchere{
+    padding: 50px;
+  }
+}
+
+/* ----------------------------------------------------Admission------------------------------------------------------------------------------ */
+
+.campus{
+  display: flex;
+  flex-wrap: wrap;
+}
+.campus-pic{
+  width: 400px;
+  height: 300px;
+  padding-left: 20px;
+
+}
+.campus-part{
+  padding: 20px;
+  flex: 1;
+  
+}
+.campus-info p{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding-top: 10px;
+  color:rgb(32,7,105);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.campus-info a{
+  float: right;
+  margin-right: 70px;
+}
+@media only screen and (max-width: 550px) {
+  .campus-pic{
+    width: 370px;
+    height: 300px;
+    padding-left: 10px;
+  
+  }
+}
+
+/* ------------------------------------------------------FOoter----------------------------------------------------------------------------------------- */
+
+.campuses-footer{
+  padding: 30px;
+}
+.line{
+  width: 150px;
+  border-bottom: 2px solid rgb(32,7,105);
+}
+.campuses-footer p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(32,7,105)x;
+}
+.footer-links{
+  display: flex;
+}
+@media only screen and (max-width: 550px) {
+  .campuses-footer{
+    padding: 10px;
+  }
+  .line{
+    width: 100px;
+  }
+  .campuses-footer p{
+    font-size: 0.7rem;
+  }
+}
